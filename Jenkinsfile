@@ -18,7 +18,7 @@ pipeline {
     stage('Build image') {
       steps{
         script {
-          dockerImage = docker.build "maggi711/todolist-app" #dockerimagename
+          dockerImage = docker.build dockerimagename
         }
       }
     }
